@@ -9,6 +9,6 @@ COPY ./Flask_API /opt/ml_api/
 RUN pip install --upgrade pip
 RUN pip install -r /opt/ml_api/Requirements.txt
 
-EXPOSE 5000
+EXPOSE 80
 
 CMD ["python","./flask_app.py"]
